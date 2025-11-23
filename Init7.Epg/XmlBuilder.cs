@@ -16,6 +16,10 @@ namespace Init7.Epg
     {
         protected readonly T _root = root;
 
+#if TARGET_AOT
+        private static readonly XmlSerializerContract _serializers = new();
+#endif
+
         protected abstract void FinishAppending();
 
         private static XmlSerializer GetSerializer(object obj)

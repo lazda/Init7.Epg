@@ -1,42 +1,37 @@
-# See https://aka.ms/customizecontainer to learn how to customize your debug container and how Visual Studio uses this Dockerfile to build your images for faster debugging.
-
-# =========================
-# Stage 1: Build (x64 host)
-# =========================
-FROM mcr.microsoft.com/dotnet/sdk:9.0 AS build
+# -------------------------
+# Stage 1: Build (native ARM64 on Pi)
+# -------------------------
+FROM mcr.microsoft.com/dotnet/sdk:9.0-bookworm-slim-arm64v8 AS build
 
 WORKDIR /src
 
-# Install git + certificates so restore works
-RUN apt-get update \
-    && apt-get install -y --no-install-recommends git ca-certificates \
-    && rm -rf /var/lib/apt/lists/*
+# Install Git + CA certificates for restore
+RUN apt-get update && \
+    apt-get install -y --no-install-recommends git ca-certificates && \
+    rm -rf /var/lib/apt/lists/*
 
-# Clone the Init7.Epg repository directly from GitHub
+# Clone the repository
 RUN git clone https://github.com/lazda/Init7.Epg.git .
 
 # Restore solution
-RUN dotnet restore "Init7.Epg.sln"
+RUN dotnet restore "Init7.Epg.sln" --runtime linux-arm64
 
-# Publish the ARM64 build
+# Build & publish
 RUN dotnet publish "Init7.Epg/Init7.Epg.csproj" \
     -c OpenWRT \
     -f net9.0 \
     -r linux-arm64 \
-    --self-contained true \
-    -o /app/publish \
-    /p:PublishTrimmed=true
+    --self-contained false \
+    -o /app/publish
 
-# ========================
-# Runtime stage
-# ========================
-FROM mcr.microsoft.com/dotnet/runtime:9.0
+# -------------------------
+# Stage 2: Runtime
+# -------------------------
+FROM mcr.microsoft.com/dotnet/runtime:9.0-bookworm-slim-arm64v8
 
 WORKDIR /app
 
+# Copy published binaries
 COPY --from=build /app/publish .
 
 ENTRYPOINT ["dotnet", "Init7.Epg.dll"]
-
-
-
