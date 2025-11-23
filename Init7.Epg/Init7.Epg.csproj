@@ -5,19 +5,19 @@
     <TargetFramework>net9.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
-    <Configurations>Debug;Release;Raspberry</Configurations>
+    <Configurations>Debug;Release;OpenWRT</Configurations>
     <Platforms>AnyCPU</Platforms>
   </PropertyGroup>
 
-  <PropertyGroup Condition="'$(Configuration)' == 'Raspberry'">
+  <PropertyGroup Condition="'$(Configuration)' == 'OpenWRT'">
     <Platform>ARM64</Platform>
-    <RuntimeIdentifier>linux-arm64</RuntimeIdentifier>
-    <PublishSingleFile>true</PublishSingleFile>
-    <SelfContained>true</SelfContained>
-    <PublishTrimmed>true</PublishTrimmed>
-    <TrimMode>full</TrimMode>
-    <EnableTrimAnalyzer>true</EnableTrimAnalyzer>
-    <TrimmerSingleWarn>false</TrimmerSingleWarn>
+	  <RuntimeIdentifier>linux-arm64</RuntimeIdentifier>
+	  <PublishSingleFile>true</PublishSingleFile>
+	  <SelfContained>true</SelfContained>
+	  <PublishTrimmed>true</PublishTrimmed>
+	  <TrimMode>full</TrimMode>
+	  <EnableTrimAnalyzer>true</EnableTrimAnalyzer>
+	  <TrimmerSingleWarn>false</TrimmerSingleWarn>
 
     <XmlResolverIsNetworkingEnabledByDefault>false</XmlResolverIsNetworkingEnabledByDefault>
     <EnableUnsafeUTF7Encoding>false</EnableUnsafeUTF7Encoding>
@@ -26,21 +26,21 @@
     <DefineConstants>TARGET_AOT</DefineConstants>
   </PropertyGroup>
 
-  <ItemGroup Condition="'$(Configuration)' == 'Raspberry'">
+  <ItemGroup Condition="'$(Configuration)' == 'OpenWRT'">
     <Compile Include="$(IntermediateOutputPath)Init7.Epg.XmlSerializers.cs" />
   </ItemGroup>
 
-  <ItemGroup Condition="'$(Configuration)' == 'Raspberry'">
+  <ItemGroup Condition="'$(Configuration)' == 'OpenWRT'">
     <HostBuildProp Include="Configuration=Release" />
     <HostBuildProp Include="Platform=AnyCPU" />
     <HostBuildProp Include="OrigIntermediateOutputPath=$(IntermediateOutputPath)" />
   </ItemGroup>
 
   <!--
-  if we're building for Raspberry, we cannot generate the serializer directly (since we're cross compiling)
+  if we're building for OpenWRT, we cannot generate the serializer directly (since we're cross compiling)
   we need to rebuild for the host architecture (x64)
   -->
-  <Target Name="InvokeGenerateXmlSerializers" BeforeTargets="CoreCompile" Condition="'$(Configuration)' == 'Raspberry'">
+  <Target Name="InvokeGenerateXmlSerializers" BeforeTargets="CoreCompile" Condition="'$(Configuration)' == 'OpenWRT'">
     <Message Importance="high" Text="... Building for Host..." />
     <MSBuild Projects="$(MSBuildThisFileDirectory)$(MSBuildProjectName).csproj" Properties="@(HostBuildProp)" />
   </Target>
@@ -60,7 +60,7 @@
   <!--
   if we're cross compiling, write the .cs in the target's objdir
   -->
-  <ItemGroup Condition="'$(Configuration)' != 'Raspberry' and '$(OrigIntermediateOutputPath)' != ''">
+  <ItemGroup Condition="'$(Configuration)' != 'OpenWRT' and '$(OrigIntermediateOutputPath)' != ''">
     <XmlSerializerArg Include="-o &quot;$(OrigIntermediateOutputPath)&quot;" />
   </ItemGroup>
 
@@ -71,23 +71,27 @@
     <XmlSerializerCmdLine>@(XmlSerializerArg -> '%(Identity)', ' ')</XmlSerializerCmdLine>
     <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
     <DockerfileContext>.</DockerfileContext>
+    <PublishAot>True</PublishAot>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='OpenWRT|AnyCPU'">
+    <Optimize>True</Optimize>
   </PropertyGroup>
 
   <!--
   if we're not cross-compiling, generate the XML serializer
   -->
-  <Target Name="GenerateXmlSerializers" AfterTargets="CoreCompile" Condition="'$(Configuration)' != 'Raspberry' and '$(OrigIntermediateOutputPath)' != ''">
+  <Target Name="GenerateXmlSerializers" AfterTargets="CoreCompile" Condition="'$(Configuration)' != 'OpenWRT' and '$(OrigIntermediateOutputPath)' != ''">
     <Message Text="... Generating XML Serializers ..." Importance="high" />
     <Message Text="$(XmlSerializerCmdLine)" Importance="high" />
     <Exec Command="$(XmlSerializerCmdLine)" />
   </Target>
 
 
-  <ItemGroup Condition="'$(Configuration)' != 'Raspberry'">
-    <PackageReference Include="Microsoft.XmlSerializer.Generator" Version="9.0.11" />
+  <ItemGroup Condition="'$(Configuration)' != 'OpenWRT'">
+    <PackageReference Include="Microsoft.XmlSerializer.Generator" Version="9.0.3" />
   </ItemGroup>
   <ItemGroup>
-    <DotNetCliToolReference Include="Microsoft.XmlSerializer.Generator" Version="9.0.11" />
+    <DotNetCliToolReference Include="Microsoft.XmlSerializer.Generator" Version="9.0.3" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.22.1" />
