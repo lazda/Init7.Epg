@@ -13,7 +13,7 @@
 
         public static string ConvertDateTimeXmlTv(DateTimeOffset dt)
         {
-            return $"{dt:yyyyMMddHHmmss zz}{dt.Offset:mm}";
+            return $"{dt:yyyyMMddHHmmsszz}{dt.Offset:mm}";
         }
     }
 }

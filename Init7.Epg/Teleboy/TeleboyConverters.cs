@@ -11,7 +11,7 @@ namespace Init7.Epg.Teleboy
         {
             var str = reader.GetString();
             if (str == null) return null;
-            return DateTimeOffset.Parse(str, CultureInfo.InvariantCulture);
+            return DateTimeOffset.Parse(str);
         }
 
         public override void Write(Utf8JsonWriter writer, DateTimeOffset? value, JsonSerializerOptions options)
@@ -92,9 +92,9 @@ namespace Init7.Epg.Teleboy
                     {
                         res.Add(new icon
                         {
-                            height = size.ToString(CultureInfo.InvariantCulture),
-                            width = size.ToString(CultureInfo.InvariantCulture),
-                            src = string.Format(CultureInfo.InvariantCulture, tpl, size, type)
+                            height = $"{size}",
+                            width = $"{size}",
+                            src = string.Format(tpl, size, type)
                         });
                     }
                 }

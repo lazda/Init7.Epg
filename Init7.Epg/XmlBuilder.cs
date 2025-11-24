@@ -6,6 +6,9 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Xml.Serialization;
 using System.Xml;
+using System.Diagnostics.CodeAnalysis;
+using Init7.Epg.Schema;
+
 #if TARGET_AOT
 using Microsoft.Xml.Serialization.GeneratedAssembly;
 #endif
@@ -16,13 +19,14 @@ namespace Init7.Epg
     {
         protected readonly T _root = root;
 
-#if TARGET_AOT
-        private static readonly XmlSerializerContract _serializers = new();
-#endif
+//#if TARGET_AOT
+//        private static readonly XmlSerializerContract _serializers = new();
+//#endif
 
         protected abstract void FinishAppending();
 
-        private static XmlSerializer GetSerializer(object obj)
+        [UnconditionalSuppressMessage("Trimming", "IL2026:Members annotated with 'RequiresUnreferencedCodeAttribute' require dynamic access otherwise can break functionality when trimming application code", Justification = "<Pending>")]
+        private static XmlSerializer GetSerializer(dynamic obj)
         {
             /**
              * in order to build AOT code dealing with XML, we must AOT-generate the XML (de)serializers.
@@ -31,23 +35,26 @@ namespace Init7.Epg
              * - the AnyCPU (host) version will use the regular JIT-based serializer.
              * - the AOT version will use the generated serializers.
              **/
-#if TARGET_AOT
-            return _serializers.GetSerializer(obj.GetType());
-#else
+//#if TARGET_AOT
+           // return _serializers.GetSerializer(obj.GetType());
+//#else
             return new XmlSerializer(obj.GetType());
-#endif
+//#endif
         }
 
+        [UnconditionalSuppressMessage("Trimming", "IL2026:Members annotated with 'RequiresUnreferencedCodeAttribute' require dynamic access otherwise can break functionality when trimming application code", Justification = "<Pending>")]
         public string BuildToString()
         {
             FinishAppending();
 
-            var serializer = GetSerializer(_root);
+            var serializer = new XmlSerializer(typeof(T));// GetSerializer(_root);
             using var stringWriter = new StringWriter();
             using var xmlWriter = XmlWriter.Create(stringWriter);
             serializer.SerializeChecked(xmlWriter, _root);
             return stringWriter.ToString();
         }
+
+        [UnconditionalSuppressMessage("Trimming", "IL2026:Members annotated with 'RequiresUnreferencedCodeAttribute' require dynamic access otherwise can break functionality when trimming application code", Justification = "<Pending>")]
         public void BuildToStream(Stream stream)
         {
             FinishAppending();
@@ -59,7 +66,9 @@ namespace Init7.Epg
                 Indent = true
             });
 
-            serializer.SerializeChecked(xmlWriter, _root);
+            serializer.Serialize(xmlWriter, _root);
+
+            //serializer.SerializeChecked(xmlWriter, _root);
         }
 
         public void BuildToFile(string filePath)

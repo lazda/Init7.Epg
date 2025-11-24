@@ -200,7 +200,7 @@ namespace Init7.Epg.Teleboy
                 length = new length
                 {
                     units = lengthUnits.seconds,
-                    Value = (itm.End.Value - itm.Begin.Value).TotalSeconds.ToString(CultureInfo.InvariantCulture)
+                    Value = $"{(itm.End.Value - itm.Begin.Value).TotalSeconds}"
                 },
                 desc = CommonConverters.ConvertSingleNullable(itm.ShortDescription, value => new desc
                 {
