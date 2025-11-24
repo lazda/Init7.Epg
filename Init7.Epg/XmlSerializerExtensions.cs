@@ -13,7 +13,7 @@ namespace Init7.Epg
         public static void SerializeChecked(
             this XmlSerializer @this,
             XmlWriter xmlWriter,
-            object? o)
+            dynamic? o)
         {
             ArgumentNullException.ThrowIfNull(@this);
             @this.Serialize(xmlWriter, o);

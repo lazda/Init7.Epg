@@ -72,6 +72,7 @@ namespace Init7.Epg
 
             Console.WriteLine($"Writing EPG to: {outFilePath}");
             await new Program().Run(outFilePath).ConfigureAwait(false);
+            Console.WriteLine($"Finished on Utc: {DateTime.UtcNow}");
         }
     }
 }

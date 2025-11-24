@@ -1,4 +1,3 @@
-using System.Globalization;
 using System.Net.Http.Json;
 using System.Web;
 
@@ -19,11 +18,11 @@ namespace Init7.Epg.Init7
             var para = HttpUtility.ParseQueryString("");
             if (offset != null)
             {
-                para["offset"] = offset.Value.ToString(CultureInfo.InvariantCulture);
+                para["offset"] = $"{offset.Value}";
             }
             if (limit != null)
             {
-                para["limit"] = limit.Value.ToString(CultureInfo.InvariantCulture);
+                para["limit"] = $"{limit.Value}";
             }
 
             var uriBuilder = new UriBuilder(Constants.INIT7APIURL)

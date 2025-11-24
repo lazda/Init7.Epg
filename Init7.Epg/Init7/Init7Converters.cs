@@ -10,7 +10,7 @@ namespace Init7.Epg.Init7
         public override DateTimeOffset Read(ref Utf8JsonReader reader, Type typeToConvert, JsonSerializerOptions options)
         {
             var str = reader.GetString() ?? throw new InvalidDataException();
-            return DateTimeOffset.Parse(str, CultureInfo.InvariantCulture);
+            return DateTimeOffset.Parse(str);
         }
 
         public override void Write(Utf8JsonWriter writer, DateTimeOffset value, JsonSerializerOptions options)
@@ -26,7 +26,7 @@ namespace Init7.Epg.Init7
         {
             var str = reader.GetString();
             if (str == null) return null;
-            return DateTimeOffset.Parse(str, CultureInfo.InvariantCulture);
+            return DateTimeOffset.Parse(str);
         }
 
         public override void Write(Utf8JsonWriter writer, DateTimeOffset? value, JsonSerializerOptions options)

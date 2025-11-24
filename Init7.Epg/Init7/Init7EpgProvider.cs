@@ -20,13 +20,10 @@ namespace Init7.Epg.Init7
                 var chan_in = itm.Channel;
 
                 var id = chan_in.ChannelId;
+                var dn = new List<displayname>() { new() { Value = chan_in.Name }, new() { Value = $"{chan_in.OrderingIndex}" } };
                 var chan_out = new channel
                 {
-                    displayname = [.. Constants.DISPLAYLANGS.Select(lang => new displayname
-                    {
-                        lang = lang,
-                        Value = id
-                    })],
+                    displayname = [.. dn],
                     icon = [new icon {
                         src = chan_in.LogoUri.AbsoluteUri
                     }],
@@ -52,28 +49,28 @@ namespace Init7.Epg.Init7
                         lang = itm.Country ?? null,
                         Value = descr
                     }),
-                    category = [.. itm.Categories.Select(cat => new category
-                    {
-                        lang = itm.Country ?? null,
-                        Value = cat
-                    })],
+                    //category = [.. itm.Categories.Select(cat => new category
+                    //{
+                    //    lang = itm.Country ?? null,
+                    //    Value = cat
+                    //})],
                     start = CommonConverters.ConvertDateTimeXmlTv(itm.TimeSlot.LowerTimeIso),
                     stop = CommonConverters.ConvertDateTimeXmlTv(itm.TimeSlot.UpperTimeIso),
                     length = new length
                     {
                         units = lengthUnits.seconds,
-                        Value = (itm.TimeSlot.UpperTimeIso - itm.TimeSlot.LowerTimeIso).TotalSeconds.ToString(CultureInfo.InvariantCulture)
+                        Value = $"{(itm.TimeSlot.UpperTimeIso - itm.TimeSlot.LowerTimeIso).TotalSeconds}"
                     },
                     credits = Init7Converters.ConvertCredits(itm.Credits),
                     icon = [.. itm.Icons.Select(ico => new icon
                     {
                         src = ico
                     })],
-                    country = itm.Country?.Split(',')
-                        ?.Select(itm => new country
-                        {
-                            Value = itm.Trim()
-                        })?.ToArray() ?? null,
+                    //country = itm.Country?.Split(',')
+                    //    ?.Select(itm => new country
+                    //    {
+                    //        Value = itm.Trim()
+                    //    })?.ToArray() ?? null,
                     episodenum = CommonConverters.ConvertSingleNullable(itm.EpisodeNumber, (ep) => new episodenum
                     {
                         Value = ep,

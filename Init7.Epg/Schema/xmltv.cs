@@ -22,8 +22,8 @@ namespace Init7.Epg.Schema
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true, Namespace = "http://tempuri.org/xmltv")]
-    [System.Xml.Serialization.XmlRootAttribute(Namespace = "http://tempuri.org/xmltv", IsNullable = false)]
+    //[System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true, Namespace = "http://tempuri.org/xmltv")]
+    //[System.Xml.Serialization.XmlRootAttribute(Namespace = "http://tempuri.org/xmltv", IsNullable = false)]
     [DynamicallyAccessedMembers(DynamicallyAccessedMemberTypes.All)]
     public partial class tv
     {
@@ -162,8 +162,8 @@ namespace Init7.Epg.Schema
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true, Namespace = "http://tempuri.org/xmltv")]
-    [System.Xml.Serialization.XmlRootAttribute(Namespace = "http://tempuri.org/xmltv", IsNullable = false)]
+    //[System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true, Namespace = "http://tempuri.org/xmltv")]
+    //[System.Xml.Serialization.XmlRootAttribute(Namespace = "http://tempuri.org/xmltv", IsNullable = false)]
     public partial class channel
     {
 
@@ -237,8 +237,8 @@ namespace Init7.Epg.Schema
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true, Namespace = "http://tempuri.org/xmltv")]
-    [System.Xml.Serialization.XmlRootAttribute("display-name", Namespace = "http://tempuri.org/xmltv", IsNullable = false)]
+    //[System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true, Namespace = "http://tempuri.org/xmltv")]
+    //[System.Xml.Serialization.XmlRootAttribute("display-name", Namespace = "http://tempuri.org/xmltv", IsNullable = false)]
     public partial class displayname
     {
 
@@ -280,8 +280,8 @@ namespace Init7.Epg.Schema
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true, Namespace = "http://tempuri.org/xmltv")]
-    [System.Xml.Serialization.XmlRootAttribute(Namespace = "http://tempuri.org/xmltv", IsNullable = false)]
+    //[System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true, Namespace = "http://tempuri.org/xmltv")]
+    //[System.Xml.Serialization.XmlRootAttribute(Namespace = "http://tempuri.org/xmltv", IsNullable = false)]
     public partial class icon
     {
 
@@ -339,8 +339,8 @@ namespace Init7.Epg.Schema
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true, Namespace = "http://tempuri.org/xmltv")]
-    [System.Xml.Serialization.XmlRootAttribute(Namespace = "http://tempuri.org/xmltv", IsNullable = false)]
+    //[System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true, Namespace = "http://tempuri.org/xmltv")]
+    //[System.Xml.Serialization.XmlRootAttribute(Namespace = "http://tempuri.org/xmltv", IsNullable = false)]
     public partial class url
     {
 
@@ -382,8 +382,8 @@ namespace Init7.Epg.Schema
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true, Namespace = "http://tempuri.org/xmltv")]
-    [System.Xml.Serialization.XmlRootAttribute(Namespace = "http://tempuri.org/xmltv", IsNullable = false)]
+    //[System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true, Namespace = "http://tempuri.org/xmltv")]
+    //[System.Xml.Serialization.XmlRootAttribute(Namespace = "http://tempuri.org/xmltv", IsNullable = false)]
     public partial class programme
     {
 
@@ -919,8 +919,8 @@ namespace Init7.Epg.Schema
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true, Namespace = "http://tempuri.org/xmltv")]
-    [System.Xml.Serialization.XmlRootAttribute(Namespace = "http://tempuri.org/xmltv", IsNullable = false)]
+    //[System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true, Namespace = "http://tempuri.org/xmltv")]
+    //[System.Xml.Serialization.XmlRootAttribute(Namespace = "http://tempuri.org/xmltv", IsNullable = false)]
     public partial class title
     {
 
@@ -962,8 +962,8 @@ namespace Init7.Epg.Schema
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true, Namespace = "http://tempuri.org/xmltv")]
-    [System.Xml.Serialization.XmlRootAttribute("sub-title", Namespace = "http://tempuri.org/xmltv", IsNullable = false)]
+    //[System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true, Namespace = "http://tempuri.org/xmltv")]
+    //[System.Xml.Serialization.XmlRootAttribute("sub-title", Namespace = "http://tempuri.org/xmltv", IsNullable = false)]
     public partial class subtitle
     {
 
@@ -1005,8 +1005,8 @@ namespace Init7.Epg.Schema
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true, Namespace = "http://tempuri.org/xmltv")]
-    [System.Xml.Serialization.XmlRootAttribute(Namespace = "http://tempuri.org/xmltv", IsNullable = false)]
+    //[System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true, Namespace = "http://tempuri.org/xmltv")]
+    //[System.Xml.Serialization.XmlRootAttribute(Namespace = "http://tempuri.org/xmltv", IsNullable = false)]
     public partial class desc
     {
 
@@ -1048,8 +1048,8 @@ namespace Init7.Epg.Schema
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true, Namespace = "http://tempuri.org/xmltv")]
-    [System.Xml.Serialization.XmlRootAttribute(Namespace = "http://tempuri.org/xmltv", IsNullable = false)]
+    //[System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true, Namespace = "http://tempuri.org/xmltv")]
+    //[System.Xml.Serialization.XmlRootAttribute(Namespace = "http://tempuri.org/xmltv", IsNullable = false)]
     public partial class credits
     {
 
@@ -1219,19 +1219,19 @@ namespace Init7.Epg.Schema
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true, Namespace = "http://tempuri.org/xmltv")]
-    [System.Xml.Serialization.XmlRootAttribute(Namespace = "http://tempuri.org/xmltv", IsNullable = false)]
+    //[System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true, Namespace = "http://tempuri.org/xmltv")]
+    //[System.Xml.Serialization.XmlRootAttribute(Namespace = "http://tempuri.org/xmltv", IsNullable = false)]
     public partial class director
     {
 
-        private object[] itemsField;
+        private dynamic[] itemsField;
 
         private string[] textField;
 
         /// <remarks/>
         [System.Xml.Serialization.XmlElementAttribute("image", typeof(image))]
         [System.Xml.Serialization.XmlElementAttribute("url", typeof(url))]
-        public object[] Items
+        public dynamic[] Items
         {
             get
             {
@@ -1263,8 +1263,8 @@ namespace Init7.Epg.Schema
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true, Namespace = "http://tempuri.org/xmltv")]
-    [System.Xml.Serialization.XmlRootAttribute(Namespace = "http://tempuri.org/xmltv", IsNullable = false)]
+    //[System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true, Namespace = "http://tempuri.org/xmltv")]
+   // [System.Xml.Serialization.XmlRootAttribute(Namespace = "http://tempuri.org/xmltv", IsNullable = false)]
     public partial class image
     {
 
@@ -1443,7 +1443,7 @@ namespace Init7.Epg.Schema
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.8.3928.0")]
     [System.SerializableAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true, Namespace = "http://tempuri.org/xmltv")]
+    //[System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true, Namespace = "http://tempuri.org/xmltv")]
     public enum imageOrient
     {
 
@@ -1459,12 +1459,12 @@ namespace Init7.Epg.Schema
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true, Namespace = "http://tempuri.org/xmltv")]
-    [System.Xml.Serialization.XmlRootAttribute(Namespace = "http://tempuri.org/xmltv", IsNullable = false)]
+    //[System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true, Namespace = "http://tempuri.org/xmltv")]
+    //[System.Xml.Serialization.XmlRootAttribute(Namespace = "http://tempuri.org/xmltv", IsNullable = false)]
     public partial class actor
     {
 
-        private object[] itemsField;
+        private dynamic[] itemsField;
 
         private string[] textField;
 
@@ -1477,7 +1477,7 @@ namespace Init7.Epg.Schema
         /// <remarks/>
         [System.Xml.Serialization.XmlElementAttribute("image", typeof(image))]
         [System.Xml.Serialization.XmlElementAttribute("url", typeof(url))]
-        public object[] Items
+        public dynamic[] Items
         {
             get
             {
@@ -1549,7 +1549,7 @@ namespace Init7.Epg.Schema
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.8.3928.0")]
     [System.SerializableAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true, Namespace = "http://tempuri.org/xmltv")]
+    //[System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true, Namespace = "http://tempuri.org/xmltv")]
     public enum actorGuest
     {
 
@@ -1565,19 +1565,19 @@ namespace Init7.Epg.Schema
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true, Namespace = "http://tempuri.org/xmltv")]
-    [System.Xml.Serialization.XmlRootAttribute(Namespace = "http://tempuri.org/xmltv", IsNullable = false)]
+    //[System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true, Namespace = "http://tempuri.org/xmltv")]
+    //[System.Xml.Serialization.XmlRootAttribute(Namespace = "http://tempuri.org/xmltv", IsNullable = false)]
     public partial class writer
     {
 
-        private object[] itemsField;
+        private dynamic[] itemsField;
 
         private string[] textField;
 
         /// <remarks/>
         [System.Xml.Serialization.XmlElementAttribute("image", typeof(image))]
         [System.Xml.Serialization.XmlElementAttribute("url", typeof(url))]
-        public object[] Items
+        public dynamic[] Items
         {
             get
             {
@@ -1609,19 +1609,19 @@ namespace Init7.Epg.Schema
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true, Namespace = "http://tempuri.org/xmltv")]
-    [System.Xml.Serialization.XmlRootAttribute(Namespace = "http://tempuri.org/xmltv", IsNullable = false)]
+    //[System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true, Namespace = "http://tempuri.org/xmltv")]
+    //[System.Xml.Serialization.XmlRootAttribute(Namespace = "http://tempuri.org/xmltv", IsNullable = false)]
     public partial class adapter
     {
 
-        private object[] itemsField;
+        private dynamic[] itemsField;
 
         private string[] textField;
 
         /// <remarks/>
         [System.Xml.Serialization.XmlElementAttribute("image", typeof(image))]
         [System.Xml.Serialization.XmlElementAttribute("url", typeof(url))]
-        public object[] Items
+        public dynamic[] Items
         {
             get
             {
@@ -1653,19 +1653,19 @@ namespace Init7.Epg.Schema
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true, Namespace = "http://tempuri.org/xmltv")]
-    [System.Xml.Serialization.XmlRootAttribute(Namespace = "http://tempuri.org/xmltv", IsNullable = false)]
+    //[System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true, Namespace = "http://tempuri.org/xmltv")]
+    //[System.Xml.Serialization.XmlRootAttribute(Namespace = "http://tempuri.org/xmltv", IsNullable = false)]
     public partial class producer
     {
 
-        private object[] itemsField;
+        private dynamic[] itemsField;
 
         private string[] textField;
 
         /// <remarks/>
         [System.Xml.Serialization.XmlElementAttribute("image", typeof(image))]
         [System.Xml.Serialization.XmlElementAttribute("url", typeof(url))]
-        public object[] Items
+        public dynamic[] Items
         {
             get
             {
@@ -1697,19 +1697,19 @@ namespace Init7.Epg.Schema
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true, Namespace = "http://tempuri.org/xmltv")]
-    [System.Xml.Serialization.XmlRootAttribute(Namespace = "http://tempuri.org/xmltv", IsNullable = false)]
+    //[System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true, Namespace = "http://tempuri.org/xmltv")]
+    //[System.Xml.Serialization.XmlRootAttribute(Namespace = "http://tempuri.org/xmltv", IsNullable = false)]
     public partial class composer
     {
 
-        private object[] itemsField;
+        private dynamic[] itemsField;
 
         private string[] textField;
 
         /// <remarks/>
         [System.Xml.Serialization.XmlElementAttribute("image", typeof(image))]
         [System.Xml.Serialization.XmlElementAttribute("url", typeof(url))]
-        public object[] Items
+        public dynamic[] Items
         {
             get
             {
@@ -1741,19 +1741,19 @@ namespace Init7.Epg.Schema
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true, Namespace = "http://tempuri.org/xmltv")]
-    [System.Xml.Serialization.XmlRootAttribute(Namespace = "http://tempuri.org/xmltv", IsNullable = false)]
+    //[System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true, Namespace = "http://tempuri.org/xmltv")]
+    //[System.Xml.Serialization.XmlRootAttribute(Namespace = "http://tempuri.org/xmltv", IsNullable = false)]
     public partial class editor
     {
 
-        private object[] itemsField;
+        private dynamic[] itemsField;
 
         private string[] textField;
 
         /// <remarks/>
         [System.Xml.Serialization.XmlElementAttribute("image", typeof(image))]
         [System.Xml.Serialization.XmlElementAttribute("url", typeof(url))]
-        public object[] Items
+        public dynamic[] Items
         {
             get
             {
@@ -1785,19 +1785,19 @@ namespace Init7.Epg.Schema
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true, Namespace = "http://tempuri.org/xmltv")]
-    [System.Xml.Serialization.XmlRootAttribute(Namespace = "http://tempuri.org/xmltv", IsNullable = false)]
+    //[System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true, Namespace = "http://tempuri.org/xmltv")]
+    //[System.Xml.Serialization.XmlRootAttribute(Namespace = "http://tempuri.org/xmltv", IsNullable = false)]
     public partial class presenter
     {
 
-        private object[] itemsField;
+        private dynamic[] itemsField;
 
         private string[] textField;
 
         /// <remarks/>
         [System.Xml.Serialization.XmlElementAttribute("image", typeof(image))]
         [System.Xml.Serialization.XmlElementAttribute("url", typeof(url))]
-        public object[] Items
+        public dynamic[] Items
         {
             get
             {
@@ -1829,19 +1829,19 @@ namespace Init7.Epg.Schema
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true, Namespace = "http://tempuri.org/xmltv")]
-    [System.Xml.Serialization.XmlRootAttribute(Namespace = "http://tempuri.org/xmltv", IsNullable = false)]
+    //[System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true, Namespace = "http://tempuri.org/xmltv")]
+    //[System.Xml.Serialization.XmlRootAttribute(Namespace = "http://tempuri.org/xmltv", IsNullable = false)]
     public partial class commentator
     {
 
-        private object[] itemsField;
+        private dynamic[] itemsField;
 
         private string[] textField;
 
         /// <remarks/>
         [System.Xml.Serialization.XmlElementAttribute("image", typeof(image))]
         [System.Xml.Serialization.XmlElementAttribute("url", typeof(url))]
-        public object[] Items
+        public dynamic[] Items
         {
             get
             {
@@ -1873,19 +1873,19 @@ namespace Init7.Epg.Schema
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true, Namespace = "http://tempuri.org/xmltv")]
-    [System.Xml.Serialization.XmlRootAttribute(Namespace = "http://tempuri.org/xmltv", IsNullable = false)]
+    //[System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true, Namespace = "http://tempuri.org/xmltv")]
+    //[System.Xml.Serialization.XmlRootAttribute(Namespace = "http://tempuri.org/xmltv", IsNullable = false)]
     public partial class guest
     {
 
-        private object[] itemsField;
+        private dynamic[] itemsField;
 
         private string[] textField;
 
         /// <remarks/>
         [System.Xml.Serialization.XmlElementAttribute("image", typeof(image))]
         [System.Xml.Serialization.XmlElementAttribute("url", typeof(url))]
-        public object[] Items
+        public dynamic[] Items
         {
             get
             {
@@ -1917,8 +1917,8 @@ namespace Init7.Epg.Schema
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true, Namespace = "http://tempuri.org/xmltv")]
-    [System.Xml.Serialization.XmlRootAttribute(Namespace = "http://tempuri.org/xmltv", IsNullable = false)]
+    //[System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true, Namespace = "http://tempuri.org/xmltv")]
+    //[System.Xml.Serialization.XmlRootAttribute(Namespace = "http://tempuri.org/xmltv", IsNullable = false)]
     public partial class category
     {
 
@@ -1960,8 +1960,8 @@ namespace Init7.Epg.Schema
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true, Namespace = "http://tempuri.org/xmltv")]
-    [System.Xml.Serialization.XmlRootAttribute(Namespace = "http://tempuri.org/xmltv", IsNullable = false)]
+   // [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true, Namespace = "http://tempuri.org/xmltv")]
+   // [System.Xml.Serialization.XmlRootAttribute(Namespace = "http://tempuri.org/xmltv", IsNullable = false)]
     public partial class keyword
     {
 
@@ -2003,8 +2003,8 @@ namespace Init7.Epg.Schema
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true, Namespace = "http://tempuri.org/xmltv")]
-    [System.Xml.Serialization.XmlRootAttribute(Namespace = "http://tempuri.org/xmltv", IsNullable = false)]
+   // [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true, Namespace = "http://tempuri.org/xmltv")]
+   // [System.Xml.Serialization.XmlRootAttribute(Namespace = "http://tempuri.org/xmltv", IsNullable = false)]
     public partial class language
     {
 
@@ -2046,8 +2046,8 @@ namespace Init7.Epg.Schema
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true, Namespace = "http://tempuri.org/xmltv")]
-    [System.Xml.Serialization.XmlRootAttribute("orig-language", Namespace = "http://tempuri.org/xmltv", IsNullable = false)]
+   // [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true, Namespace = "http://tempuri.org/xmltv")]
+   // [System.Xml.Serialization.XmlRootAttribute("orig-language", Namespace = "http://tempuri.org/xmltv", IsNullable = false)]
     public partial class origlanguage
     {
 
@@ -2089,8 +2089,8 @@ namespace Init7.Epg.Schema
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true, Namespace = "http://tempuri.org/xmltv")]
-    [System.Xml.Serialization.XmlRootAttribute(Namespace = "http://tempuri.org/xmltv", IsNullable = false)]
+   // [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true, Namespace = "http://tempuri.org/xmltv")]
+   // [System.Xml.Serialization.XmlRootAttribute(Namespace = "http://tempuri.org/xmltv", IsNullable = false)]
     public partial class length
     {
 
@@ -2130,7 +2130,7 @@ namespace Init7.Epg.Schema
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.8.3928.0")]
     [System.SerializableAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true, Namespace = "http://tempuri.org/xmltv")]
+   // [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true, Namespace = "http://tempuri.org/xmltv")]
     public enum lengthUnits
     {
 
@@ -2149,8 +2149,8 @@ namespace Init7.Epg.Schema
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true, Namespace = "http://tempuri.org/xmltv")]
-    [System.Xml.Serialization.XmlRootAttribute(Namespace = "http://tempuri.org/xmltv", IsNullable = false)]
+   // [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true, Namespace = "http://tempuri.org/xmltv")]
+   // [System.Xml.Serialization.XmlRootAttribute(Namespace = "http://tempuri.org/xmltv", IsNullable = false)]
     public partial class country
     {
 
@@ -2192,8 +2192,8 @@ namespace Init7.Epg.Schema
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true, Namespace = "http://tempuri.org/xmltv")]
-    [System.Xml.Serialization.XmlRootAttribute("episode-num", Namespace = "http://tempuri.org/xmltv", IsNullable = false)]
+   // [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true, Namespace = "http://tempuri.org/xmltv")]
+  //  [System.Xml.Serialization.XmlRootAttribute("episode-num", Namespace = "http://tempuri.org/xmltv", IsNullable = false)]
     public partial class episodenum
     {
 
@@ -2241,8 +2241,8 @@ namespace Init7.Epg.Schema
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true, Namespace = "http://tempuri.org/xmltv")]
-    [System.Xml.Serialization.XmlRootAttribute(Namespace = "http://tempuri.org/xmltv", IsNullable = false)]
+  //  [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true, Namespace = "http://tempuri.org/xmltv")]
+  //  [System.Xml.Serialization.XmlRootAttribute(Namespace = "http://tempuri.org/xmltv", IsNullable = false)]
     public partial class video
     {
 
@@ -2312,8 +2312,8 @@ namespace Init7.Epg.Schema
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true, Namespace = "http://tempuri.org/xmltv")]
-    [System.Xml.Serialization.XmlRootAttribute(Namespace = "http://tempuri.org/xmltv", IsNullable = false)]
+   // [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true, Namespace = "http://tempuri.org/xmltv")]
+   // [System.Xml.Serialization.XmlRootAttribute(Namespace = "http://tempuri.org/xmltv", IsNullable = false)]
     public partial class audio
     {
 
@@ -2353,8 +2353,8 @@ namespace Init7.Epg.Schema
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true, Namespace = "http://tempuri.org/xmltv")]
-    [System.Xml.Serialization.XmlRootAttribute("previously-shown", Namespace = "http://tempuri.org/xmltv", IsNullable = false)]
+  //  [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true, Namespace = "http://tempuri.org/xmltv")]
+  //  [System.Xml.Serialization.XmlRootAttribute("previously-shown", Namespace = "http://tempuri.org/xmltv", IsNullable = false)]
     public partial class previouslyshown
     {
 
@@ -2396,8 +2396,8 @@ namespace Init7.Epg.Schema
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true, Namespace = "http://tempuri.org/xmltv")]
-    [System.Xml.Serialization.XmlRootAttribute(Namespace = "http://tempuri.org/xmltv", IsNullable = false)]
+  //  [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true, Namespace = "http://tempuri.org/xmltv")]
+  //  [System.Xml.Serialization.XmlRootAttribute(Namespace = "http://tempuri.org/xmltv", IsNullable = false)]
     public partial class premiere
     {
 
@@ -2439,8 +2439,8 @@ namespace Init7.Epg.Schema
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true, Namespace = "http://tempuri.org/xmltv")]
-    [System.Xml.Serialization.XmlRootAttribute("last-chance", Namespace = "http://tempuri.org/xmltv", IsNullable = false)]
+  //  [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true, Namespace = "http://tempuri.org/xmltv")]
+   // [System.Xml.Serialization.XmlRootAttribute("last-chance", Namespace = "http://tempuri.org/xmltv", IsNullable = false)]
     public partial class lastchance
     {
 
@@ -2482,8 +2482,8 @@ namespace Init7.Epg.Schema
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true, Namespace = "http://tempuri.org/xmltv")]
-    [System.Xml.Serialization.XmlRootAttribute(Namespace = "http://tempuri.org/xmltv", IsNullable = false)]
+  //  [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true, Namespace = "http://tempuri.org/xmltv")]
+  //  [System.Xml.Serialization.XmlRootAttribute(Namespace = "http://tempuri.org/xmltv", IsNullable = false)]
     public partial class @new
     {
     }
@@ -2493,8 +2493,8 @@ namespace Init7.Epg.Schema
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true, Namespace = "http://tempuri.org/xmltv")]
-    [System.Xml.Serialization.XmlRootAttribute(Namespace = "http://tempuri.org/xmltv", IsNullable = false)]
+   // [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true, Namespace = "http://tempuri.org/xmltv")]
+   // [System.Xml.Serialization.XmlRootAttribute(Namespace = "http://tempuri.org/xmltv", IsNullable = false)]
     public partial class subtitles
     {
 
@@ -2549,7 +2549,7 @@ namespace Init7.Epg.Schema
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.8.3928.0")]
     [System.SerializableAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true, Namespace = "http://tempuri.org/xmltv")]
+    //[System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true, Namespace = "http://tempuri.org/xmltv")]
     public enum subtitlesType
     {
 
@@ -2569,8 +2569,8 @@ namespace Init7.Epg.Schema
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true, Namespace = "http://tempuri.org/xmltv")]
-    [System.Xml.Serialization.XmlRootAttribute(Namespace = "http://tempuri.org/xmltv", IsNullable = false)]
+  //  [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true, Namespace = "http://tempuri.org/xmltv")]
+   // [System.Xml.Serialization.XmlRootAttribute(Namespace = "http://tempuri.org/xmltv", IsNullable = false)]
     public partial class rating
     {
 
@@ -2627,8 +2627,8 @@ namespace Init7.Epg.Schema
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true, Namespace = "http://tempuri.org/xmltv")]
-    [System.Xml.Serialization.XmlRootAttribute("star-rating", Namespace = "http://tempuri.org/xmltv", IsNullable = false)]
+   // [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true, Namespace = "http://tempuri.org/xmltv")]
+  //  [System.Xml.Serialization.XmlRootAttribute("star-rating", Namespace = "http://tempuri.org/xmltv", IsNullable = false)]
     public partial class starrating
     {
 
@@ -2685,8 +2685,8 @@ namespace Init7.Epg.Schema
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true, Namespace = "http://tempuri.org/xmltv")]
-    [System.Xml.Serialization.XmlRootAttribute(Namespace = "http://tempuri.org/xmltv", IsNullable = false)]
+  //  [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true, Namespace = "http://tempuri.org/xmltv")]
+  //  [System.Xml.Serialization.XmlRootAttribute(Namespace = "http://tempuri.org/xmltv", IsNullable = false)]
     public partial class review
     {
 
@@ -2774,7 +2774,7 @@ namespace Init7.Epg.Schema
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.8.3928.0")]
     [System.SerializableAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true, Namespace = "http://tempuri.org/xmltv")]
+   // [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true, Namespace = "http://tempuri.org/xmltv")]
     public enum reviewType
     {
 

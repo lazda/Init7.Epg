@@ -1,15 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Init7.Epg
+﻿namespace Init7.Epg
 {
     public static class ObjectExtensions
     {
         // Kotlin: fun <T, R> T.let(block: (T) -> R): R
-        public static R Let<T, R>(this T self, Func<T, R> block)
+        public static TR Let<T, TR>(this T self, Func<T, TR> block)
         {
             ArgumentNullException.ThrowIfNull(block);
             return block(self);

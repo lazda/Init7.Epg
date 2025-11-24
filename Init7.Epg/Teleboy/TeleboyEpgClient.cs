@@ -43,13 +43,13 @@ namespace Init7.Epg.Teleboy
             para["expand"] = "station,logos,flags,primary_image";
             if (offset > 0)
             {
-                para["skip"] = offset.ToString(CultureInfo.InvariantCulture);
+                para["skip"] = $"{offset}";
             }
-            para["limit"] = limit.ToString(CultureInfo.InvariantCulture);
+            para["limit"] = $"{limit}";
 
             var uriBuilder = new UriBuilder(Constants.TELEBOYBROADCASTSAPIURL)
             {
-                Query = para.ToString()
+                Query = $"{para}"
             };
 
             Console.WriteLine(uriBuilder.Uri.ToString());

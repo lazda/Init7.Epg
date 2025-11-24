@@ -25,8 +25,8 @@ namespace Init7.Epg
 
         public EpgBuilder() : base(new tv())
         {
-            _root.generatorinfoname = GetType().Namespace;
-            _root.generatorinfourl = "https://notyourbusiness.ch";
+            //_root.generatorinfoname = GetType().Namespace;
+            //_root.generatorinfourl = "https://notyourbusiness.ch";
             // with case insensitive channel name lookup
             _channels = new Dictionary<string, EpgChannel>(StringComparer.InvariantCultureIgnoreCase);
         }
